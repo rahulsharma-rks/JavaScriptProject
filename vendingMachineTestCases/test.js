@@ -1,4 +1,3 @@
-/* istanbul ignore next */
 if (typeof module !== 'undefined' && module.exports) { // check we're server-side
     var QUnit = require('qunitjs'); // require QUnit node.js module
     // alias the QUnit.test method so we don't have to change all our tests
@@ -31,5 +30,5 @@ if (typeof module !== 'undefined' && module.exports) { // check we're server-sid
     assert.deepEqual(result, expected);
   });
   
-  /* istanbul ignore next */
+  
   if (typeof module !== 'undefined' && module.exports) { QUnit.load(); } // run the tests
